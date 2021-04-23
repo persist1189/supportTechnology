@@ -1,0 +1,122 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	line-height: 1;
+    list-style : none;
+}
+body {
+    background-color: #f5f5dc;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 20px;
+}
+
+.title p {
+    line-height: 30px;
+}
+
+.title p:first-child{
+    font-weight: 700;
+}
+
+.code {
+    border: 1px solid black;
+    background-color: #eee;
+    margin-top: 5px;
+    width: 30%;
+    padding: 15px;
+    display: none;
+}
+
+#toggleCode {
+    width: 30%;
+    color: #0000ff;
+}
+
+@media screen and (max-width:768px) {
+    .code {
+        width: 85%;
+    }
+    #toggleCode {
+        width: 60%;
+    }
+}
+
+.padding {
+    padding: 10px;
+}
+
+.style{
+    line-height: 25px;
+}
+
+.question2 .title {
+    margin-top: 15px;
+}
+
+.question2 .title p span {
+    background-color: rgba(31,31,107,0.1);
+    padding: 2px;
+}
+
+.floatSample {
+    margin: 15px 0px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.floatBox {
+    width: 200px;
+    height: 200px;
+    background-color: #e0e094;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 50%;
+    float: right;
+    position: relative;
+}
+
+.floatBox::before {
+    content: 'float: right';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 45%;
+    bottom: 0;
+    right: 0;
+    left: 34%;
+}
+
+.floatBox:hover {
+    background-color: #00ff00;
+}
+
+.videoBox {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.videoBox iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
