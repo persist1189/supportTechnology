@@ -102,6 +102,23 @@ a {
     left: 34%;
 }
 
+.floatBox2 {
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.floatBox3 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+}
+
+
+
 .floatBox:hover {
     background-color: #00ff00;
 }
@@ -120,3 +137,55 @@ a {
     width: 100%;
     height: 100%;
 }
+
+section {
+    height: 100vh;
+}
+
+section div {
+    width: 300px;
+    height: 300px;
+    background-color: #0000ff;
+}
+
+.one {
+    background-color: #00ff00;
+    position: relative;
+}
+
+.one div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.two {
+    background-color: #ff0000;
+    position: relative;
+}
+
+.two div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+}
+
+.three {
+    background-color: #00f0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+
+
+
+
+
+

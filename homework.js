@@ -14,19 +14,23 @@ const LABEL = {
     line-height: 1;
     list-style : none;
     }`,
-        'answer2': `A2: 使用 Autoprefixer 套件，設定好條件，如 'cover 99.5', 'Firefox >= 45' 讓套件生成對應的瀏覽器`,
-        'answer3': `A3: 使用 Reset Css 檔案`
+        'answer2': `A2: 使用 Reset Css 檔案`
     },
     'question2': {
         'float': `2.如何讓浮動元素垂直置中？`,
-        'floatAnswer1': `A: 在外層多設定個 <span>div</span> 標籤後設定 <span>flex</span> 並使用 <span>justify-content & align-items</span> 屬性`,
+        'floatAnswer1': `A: 先設定區域的高度再設定擁有寬與高各 300px 的大小並賦予背景顏色的圖案<br/>
+                         1. 設定 css 屬性，並賦予背景顏色，設定位置為相對位置方便圖片設為絕對位置時不會亂跑，再將 div 區域賦予背景顏色與絕對位置路徑，設定上方與左方的位置，再使用位移的屬性來調整位置<br/>
+                         2. 設定 css 屬性，並賦予背景顏色，設定位置為相對位置方便圖片設為絕對位置時不會亂跑，再將 div 區域賦予背景顏色與絕對位置路徑，設定上方與左方的位置，再調整左邊間距與上方間距<br/>
+                         3. 使用 flex 與 垂直置中，水平置中來調整位置<br/>
+                         Sample 如下：`,
         'floatAnswerCode': 
     `   .cssName {
        display: flex;
        justify-content: center;
        align-items: center;
     }`,
-        'floatSample': `Sample:`
+        'floatSample': `Sample:`,
+        'floatSample2': `A2`,
     },
     'question3': {
         'embedVideo': `3.如何讓 embed video RWD 時維持 16:9 比例？`,
@@ -47,11 +51,9 @@ document.querySelector('#answer1').innerHTML = LABEL.question1.answer1;
 document.querySelector('#toggleCode').innerHTML = LABEL.question1.toggleCode;
 document.querySelector('#answerCode').innerHTML = LABEL.question1.answerCode;
 document.querySelector('#answer2').innerHTML = LABEL.question1.answer2;
-document.querySelector('#answer3').innerHTML = LABEL.question1.answer3;
 document.querySelector('#float').innerHTML = LABEL.question2.float;
 document.querySelector('#floatAnswer1').innerHTML = LABEL.question2.floatAnswer1;
 document.querySelector('#floatAnswerCode').innerHTML = LABEL.question2.floatAnswerCode;
-document.querySelector('#floatSample').innerHTML = LABEL.question2.floatSample;
 document.querySelector('#embedVideo').innerHTML = LABEL.question3.embedVideo;
 document.querySelector('#embedVideoAnswer').innerHTML = LABEL.question3.embedVideoAnswer;
 
