@@ -51,6 +51,10 @@ a {
     #toggleCode {
         width: 60%;
     }
+    .two div {
+        margin-left: -100px;
+        margin-top: -100px;
+    }
 }
 
 .padding {
@@ -143,8 +147,8 @@ section {
 }
 
 section div {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     background-color: #0000ff;
 }
 
@@ -169,8 +173,8 @@ section div {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -150px;
-    margin-top: -150px;
+    margin-left: -100px;
+    margin-top: -100px;
 }
 
 .three {
